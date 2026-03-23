@@ -49,8 +49,7 @@ header {
   width: 100%;
   padding: 11px 0px;
   z-index: 1;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 header #logo {
   float: left;
@@ -68,7 +67,7 @@ header nav ul {
 }
 header nav li {
   display: inline-block;
-  font-size: 21px;
+  font-size: 18px;
   padding-left: 18px;
 }
 header nav a {
@@ -92,8 +91,7 @@ header nav a:hover {
 
 #bg-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/cover.jpg);
-  -webkit-clip-path: polygon(50% 0%, 103% -7%, 100% 38%, 106% 103%, 75% 88%, 49% 98%, 24% 89%, -14% 106%, 0% 35%, -21% -19%);
-          clip-path: polygon(50% 0%, 103% -7%, 100% 38%, 106% 103%, 75% 88%, 49% 98%, 24% 89%, -14% 106%, 0% 35%, -21% -19%);
+  clip-path: polygon(50% 0%, 103% -7%, 100% 38%, 106% 103%, 75% 88%, 49% 98%, 24% 89%, -14% 106%, 0% 35%, -21% -19%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -106,7 +104,10 @@ header nav a:hover {
 #bg-image #naslov {
   color: #fff;
   width: 75%;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+}
+#bg-image #naslov p {
+  font-size: 22px;
 }
 #bg-image #naslov #btn {
   margin-top: 30px;
@@ -115,6 +116,7 @@ header nav a:hover {
   border: 1px solid #fff;
   padding: 10px;
   transition: all 0.3s ease-in-out;
+  font-size: 18px;
 }
 #bg-image #naslov #btn a:hover {
   border-color: #fba7b5;
@@ -360,67 +362,32 @@ header nav a:hover {
   text-align: center;
   padding: 10px 0px;
 }
-#projects .project-blocks .project img {
+#projects .project-blocks .project .text-block p {
+  text-transform: capitalize;
+  color: #999;
+  margin-bottom: 10px;
+}
+#projects .project-blocks .project .img-box {
+  width: 100%;
+  height: 260px;
+  border: 1px solid #b9868f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 14px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+#projects .project-blocks .project .img-box img {
   width: 100%;
   height: 100%;
-  background-color: #b9868f;
   border: 2px solid #b9868f;
-  transition: 0.3s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-#projects .project-blocks .project img:hover {
+#projects .project-blocks .project .img-box:hover {
   box-shadow: 1px 1px 30px #b9868f;
-  transition: 0.3s ease-in-out;
-}
-
-#contact {
-  margin-top: 160px;
-  width: 100%;
-}
-#contact #contactForm {
-  width: 100%;
-  margin-top: 3rem;
-  background-color: rgba(185, 134, 143, 0.1215686275);
-  padding: 20px;
-  border-radius: 10px;
-}
-#contact #contactForm #button:hover {
-  background-color: #b9868f;
-  color: #fff;
-  border-radius: 15px;
-}
-#contact #contactForm .formRow {
-  display: block;
-  width: 100%;
-  margin: 2rem 0;
-  text-align: center;
-}
-#contact #contactForm .formRow #button {
-  letter-spacing: 0.1rem;
-  padding: 15px 50px;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-#contact #contactForm .formRow #tb2 {
-  margin-left: 5%;
-}
-#contact #contactForm .formRow #tb1, #contact #contactForm .formRow #tb2 {
-  width: 37.5%;
-}
-#contact #contactForm .formRow #tb1, #contact #contactForm .formRow #tb2, #contact #contactForm .formRow #tb3, #contact #contactForm .formRow #tb5 {
-  padding: 1rem;
-  font-family: "Nunito Sans", sans-serif;
-  border: none;
-  border-radius: 15px;
-}
-#contact #contactForm .formRow #tb3 {
-  width: 80%;
-}
-#contact #contactForm textarea {
-  width: 80%;
-  height: 10rem;
-  padding: 1rem;
 }
 
 footer {

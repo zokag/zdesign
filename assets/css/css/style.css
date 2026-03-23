@@ -40,8 +40,7 @@ header {
   width: 100%;
   padding: 11px 0px;
   z-index: 1;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 header #logo {
   float: left;
@@ -82,8 +81,7 @@ header nav a:hover {
 
 #bg-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/cover.jpg);
-  -webkit-clip-path: polygon(50% 0%, 103% -7%, 100% 38%, 106% 103%, 75% 88%, 49% 98%, 24% 89%, -14% 106%, 0% 35%, -21% -19%);
-          clip-path: polygon(50% 0%, 103% -7%, 100% 38%, 106% 103%, 75% 88%, 49% 98%, 24% 89%, -14% 106%, 0% 35%, -21% -19%);
+  clip-path: polygon(50% 0%, 103% -7%, 100% 38%, 106% 103%, 75% 88%, 49% 98%, 24% 89%, -14% 106%, 0% 35%, -21% -19%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
